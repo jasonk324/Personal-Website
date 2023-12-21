@@ -4,19 +4,11 @@ import Linkedin from "../assets/Linkedin.png"
 var ReactRotatingText = require("react-rotating-text");
 
 const About = () => {
-
-  const textArray = ['Text 1', 'Text 2', 'Text 3'];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleTypingDone = () => {
-    // Increase the index and loop back to the beginning if needed
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-  };
-
   return (
     <>
       <div className="absolute w-[50%] h-[50%] left-[-700px] top-0 pink__gradient" />
       <div className="absolute w-[30%] h-[50%] left-[80px] bottom-20 blue__gradient" />
+      <div className="absolute w-[30%] h-[30%] left-[1000px] top-[1200px] white__gradient" />
       <div className="flex flex-col md:flex-row w-full justify-between gap-12">
         <div className='w-[10%] flex flex-col justify-center items-end gap-10 z-10'>
           <a href="https://github.com/jasonk324" target="_blank">

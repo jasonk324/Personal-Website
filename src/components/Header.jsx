@@ -101,7 +101,7 @@ const Header = () => {
                 <img src={Linkedin} className='w-[24px] h-[24px] cursor-pointer'/>
               </a>
             </div>
-            <h6 className='font-bold text-primary-200'>Jason Khuu</h6>
+            <h6 className='font-bold text-primary-200'>Jason Khuu ©2023</h6>
           </div>
         </div>
       </div>

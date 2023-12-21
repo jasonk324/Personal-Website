@@ -6,7 +6,7 @@ import RuHacks from "../assets/RuHacks.png"
 const Experience = () => {
   return (
     <section id="Experience" className='mt-36'>
-      <div className='experience__section rounded-lg flex flex-col gap-6 justify-center items-center w-[90%]'>
+      <div className='experience__section z-30 rounded-lg flex flex-col gap-6 justify-center items-center w-full'>
         <div className='text-title font-bold text-gradient-yellow my-12'>Experiences</div>
 
         <div className='w-full flex flex-row items-center justify-center'>
@@ -86,6 +86,7 @@ const Experience = () => {
         <div className='w-full flex flex-row items-center justify-center'>
           <div className='w-[60%] p-8 flex flex-col'>
             <div className='text-title font-bold'>Co-Chair & Vice President of Development 👑</div>
+            <div className='text-header font-bold'>Toronto Metropolitan University's Official Major League Hackathon</div>
             <div className='text-subHeader'>
               I was born and raise in Toronto all my life and attended a school in the heart of it all - Toronto Metropolitan University for Electrial Engineering. During my 5 years, I completed a 16 months co-op at AMD working as a Software Developer for the GPU and Engineering Program Management Department. In addition, I worked for 4 months as a Hardware Research Assistant after recieve my school's Undergraduate Research Opprotunity (URO) Award. 
             </div>
@@ -118,7 +119,7 @@ const Experience = () => {
           </div>
           <div className='w-[40%]'>
             <div className='p-4 flex item-center justify-center'>
-              <img src={RuHacks} className='w-[60%] bg-primary-500 rounded-2xl p-6'/>
+              <img src={RuHacks} className='w-[60%] bg-primary-600 rounded-2xl p-6'/>
             </div>
           </div>
         </div>

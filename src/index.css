@@ -131,15 +131,9 @@
 	z-index: 2;
 }
 
-.red__gradient {
-  background: linear-gradient(90deg, #999846 0%, #f0ff9a 100%);
-  filter: blur(900px);
-	z-index: 2;
-}
-
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+  filter: blur(350px);
 	z-index: 2;
 }
 

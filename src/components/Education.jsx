@@ -10,7 +10,7 @@ const Education = () => {
             <img src={TMU} className='w-[80%]'/>
           </div>
         </div>
-        <div className='w-[50%] p-8 flex flex-col'>
+        <div className='w-[50%] p-8 flex flex-col z-20'>
           <div className='text-title font-bold text-gradient-yellow'>Education</div>
           <div className='text-title font-bold'>Electrial Engineering Co-op (B.Eng)⚡🖥️</div>
           <div className='text-subHeader'>
