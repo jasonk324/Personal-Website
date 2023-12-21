@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Github from "../assets/Github.png"
 import Linkedin from "../assets/Linkedin.png"
 var ReactRotatingText = require("react-rotating-text");

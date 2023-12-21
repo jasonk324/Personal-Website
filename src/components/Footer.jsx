@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="text-header text-primary-200">
+        <div className="text-norm text-primary-200">
           Jason Khuu ©2023
         </div>
 
