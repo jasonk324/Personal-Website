@@ -5,6 +5,7 @@ import Education from "../components/Education"
 import Experience from '../components/Experience'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
+import Skills from '../components/Skills'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <div className="bg-background sm:px-16 px-6 flex justify-center items-center">
         <div className="xl:max-w-[1480px] w-full">
           <Education />
+          <Skills />
           <Experience />
           <Projects />
           <Footer /> 

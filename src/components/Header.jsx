@@ -3,33 +3,8 @@ import Linkedin from "../assets/Linkedin.png"
 import Github from "../assets/Github.png"
 import Menu from "../assets/Menu.png"
 import Close from "../assets/Close.png"
-import AboutIcon from "../assets/AboutIcon.png"
-import EducationIcon from "../assets/EducationIcon.png"
-import ExperienceIcon from "../assets/ExperienceIcon.png"
-import ProjectsIcon from "../assets/ProjectsIcon.png"
-
-export const NavLinks = [
-  {
-    id: "About",
-    icon: AboutIcon,
-    title: "About",
-  },
-  {
-    id: "Education",
-    icon: EducationIcon,
-    title: "Education",
-  },
-  {
-    id: "Experience",
-    icon: ExperienceIcon,
-    title: "Experience",
-  },
-  {
-    id: "Projects",
-    icon: ProjectsIcon,
-    title: "Projects",
-  }
-];
+import Mail from "../assets/Mail.png"
+import { NavLinks } from './Variables';
 
 const ItemTop = ({ title, icon, id, index }) => {
   return ( 
@@ -37,8 +12,8 @@ const ItemTop = ({ title, icon, id, index }) => {
     key={id}
     className={`cursor-pointer text-subHeader font-bold text-white ${index === NavLinks.length - 1 ? 'mr-0' : 'mr-12'}`}
     >
-      <a href={`#${id}`} className='flex justify-center'>
-      <img src={icon} className="mx-2 w-[24px] h-[24px]"/>
+      <a href={`#${id}`} className='flex justify-center items-center'>
+        <img src={icon} className="mx-2 w-[24px] h-[24px]"/>
         {title}
       </a>
     </li>
@@ -51,7 +26,7 @@ const ItemSide = ({ title, icon, id }) => {
       key={id}
       className={`w-[90%] p-4 my-2 bg-primary-500 hover:bg-primary-400 transition-colors rounded-[20px] cursor-pointer`}
     >
-      <a href={`#${id}`} className='flex justify-center'>
+      <a href={`#${id}`} className='flex justify-center items-center'>
         <img src={icon} className="mr-3 w-[24px] h-[24px]"/>
         <span class="text-subHeader text-white font-bold">{title}</span>
       </a>
@@ -72,13 +47,13 @@ const Header = () => {
 
       <div className="md:hidden flex flex-1 justify-end items-center">
         {!toggle && (
-          <div className='rounded-lg hover:bg-[#535374] bg-[#5D5D76] box-shadow w-[32px] h-[32px] p-2'>
+          <div className='rounded-lg hover:bg-[#535374] bg-[#5D5D76] w-[32px] h-[32px] p-2'>
             <img src={Menu} alt="menu" className="w-full h-full object-contain cursor-pointer" onClick={() => setToggle(!toggle)} />
           </div>
         )}
 
         {toggle && (
-          <div className='rounded-lg hover:bg-[#535374] bg-[#5D5D76] box-shadow w-[32px] h-[32px] p-2 z-10'>
+          <div className='rounded-lg hover:bg-[#535374] bg-[#5D5D76] w-[32px] h-[32px] p-2 z-10'>
             <img src={Close} className="`w-full h-full cursor-pointer" onClick={() => setToggle(!toggle)} />
           </div>
         )}
@@ -87,13 +62,16 @@ const Header = () => {
             <div className="py-10">
               <ul className="list-none flex flex-col justify-end items-center flex-1 mt-10">
                 {NavLinks.map((nav, index) => (
-                  <ItemSide title={nav.title} icon={nav.icon}/>
+                  <ItemSide title={nav.title} id={nav.id} icon={nav.icon}/>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="m-auto h-1/6 flex flex-col gap-3 items-center">
+          <div className="mb-16 h-1/6 flex flex-col gap-3 items-center">
             <div className='flex flex-row gap-3'>
+              <a href={`mailto:jasonkhuu.01@gmail.com`}>
+                <img src={Mail} className='w-[24px] h-[24px] cursor-pointer'/>
+              </a>
               <a href="https://github.com/jasonk324" target="_blank">
                 <img src={Github} className='w-[24px] h-[24px] cursor-pointer'/>
               </a>
@@ -101,7 +79,7 @@ const Header = () => {
                 <img src={Linkedin} className='w-[24px] h-[24px] cursor-pointer'/>
               </a>
             </div>
-            <h6 className='font-bold text-primary-200'>Jason Khuu ©2023</h6>
+            <div className='font-bold text-primary-200'>Jason Khuu ©2023</div>
           </div>
         </div>
       </div>
