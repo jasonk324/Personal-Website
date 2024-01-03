@@ -13,12 +13,12 @@ const Experience = () => {
       <div className='experience__section z-40 rounded-lg flex flex-col lg:gap-6 gap-2 justify-center items-center w-full'>
         <div className='text-title font-bold text-gradient-yellow lg:mt-12 mt-8'>Experiences</div>
         <div className='w-full flex lg:flex-row flex-col items-center justify-center'>
-          <div className='lg:w-[60%] p-8 flex flex-col'>
+          <div className='lg:w-[65%] p-8 flex flex-col'>
           <div className='text-header font-bold'>Advanced Micro Devices (AMD)</div>
             <div className='text-title font-bold'>Software Developer / Program Management Intern 🖥️</div>
             <div className='text-subHeader'>May 2022 - August 2023 (16 Months)</div>
             <div className='text-subHeader mt-2'>
-              During my time as apart of the Software Engineering Program Management Department within the User Expereince Group, I had pioneered and lead the develomenet of several projects to generate better data driven decision making within the company, while also assisted with program managing the delivery of <span className='underline text-blue-200'><a href='https://gpuopen.com/introducing-adlx/'>AMD's public C/C++ SDK ADLX</a></span>. During this time I had the opportunity to create various full stack data dashboards and websites that I presented to Vice Presidents and 50+ Managers & Engineers within the company.  
+              During my time as apart of the Software Engineering Program Management Department within the User Expereince Group, I had pioneered and lead the develomenet of several projects to generate better data driven decision making within the company, while also assisted with program managing the delivery of <span className='underline text-blue-200'><a href='https://gpuopen.com/introducing-adlx/'>AMD's public C/C++ SDK ADLX</a></span>. During this time, I had the opportunity to create various full stack data dashboards and company websites, that I personally presented to Vice Presidents and 100+ Managers & Engineers at the company.  
             </div>
             <div className='text-norm mt-2'>
               <span className='font-bold'>Skills:</span> Python, JavaScript, C/C++, React, Tailwind, Django, Plotly, Pandas, NumPy, PostgreSQL, AWS, Linux, Bash, Confluence, Sharepoint, Leadership & Program Mangement  
@@ -29,7 +29,7 @@ const Experience = () => {
             </div>
           </div>
           <div className='lg:w-[40%] w-[80%]'>
-            <div className='p-4 flex item-center justify-center'>
+            <div className='flex item-center justify-center'>
               <img src={AMD} className='w-[60%] rounded-2xl'/>
             </div>
           </div>
@@ -37,16 +37,16 @@ const Experience = () => {
 
         <div className='w-full flex lg:flex-row flex-col items-center justify-center'>
           <div className='lg:w-[40%] w-[80%] lg:order-1 order-2'>
-            <div className='p-4 flex item-center justify-center'>
+            <div className='flex item-center justify-center'>
               <img src={TmuFeas} className='w-[60%] rounded-2xl'/>
             </div>
           </div>
-          <div className='lg:w-[60%] p-8 flex flex-col lg:order-2 order-1'>
+          <div className='lg:w-[65%] p-8 flex flex-col lg:order-2 order-1'>
           <div className='text-header font-bold'>TMU Faculty of Electrial Engineering</div>
             <div className='text-title font-bold'>Hardware Research Assistant 📡</div>
             <div className='text-subHeader'>May 2021 - August 2021 (4 Months)</div>
             <div className='text-subHeader'>
-              Having won Toronto Metropolitan University's competitive <span className='underline text-blue-200'><a href='https://www.torontomu.ca/research/news-events/2021/11/students-showcase-their-undergraduate-research-opportunities-projects/'>University Opportunity Award</a></span> as a result of Academic Achievements, I was provided a grant of $10,500 to be selected to work on the research project - Compact Metamaterial Antenna Array for Wirelessly Powering Implanted Biomedical Devices, under the supervision of a <span className='underline text-blue-200'><a href='https://www.torontomu.ca/electrical-computer-biomedical/people/faculty/marco-a-antoniades/'>Dr. Marco Antoniades</a></span>. Presenting the final product at the Office of the Vice-President, Research and Innovation research showcase.
+              Having won Toronto Metropolitan University's competitive University Opportunity Award as a result of personal Academic Achievements, I was provided a grant of $10,500 to be selected to work on the research project - Compact Metamaterial Antenna Array for Wirelessly Powering Implanted Biomedical Devices, under the supervision of a <span className='underline text-blue-200'><a href='https://www.torontomu.ca/electrical-computer-biomedical/people/faculty/marco-a-antoniades/'>Dr. Marco Antoniades</a></span>. Presenting the final product at the Office of the Vice-President, Research and Innovation research showcase.
             </div>
             <div className='text-norm mt-2'>
               <span className='font-bold'>Skill:</span> MATLAB (Scripting & RF Antenna Toolbox), HFSS, ADS & Technical Documentation
@@ -59,12 +59,12 @@ const Experience = () => {
         </div>
 
         <div className='w-full flex lg:flex-row flex-col items-center justify-center'>
-          <div className='lg:w-[60%] p-8 flex flex-col'>
+          <div className='lg:w-[65%] p-8 flex flex-col'>
             <div className='text-header font-bold'>TMU's Official Major League Hackathon</div>
             <div className='text-title font-bold'>Co-Chair & Vice President of Development 👑</div>
             <div className='text-subHeader'>September 2020 - Present (3+ Years)</div>
             <div className='text-subHeader'>
-              I lead a team of 20+ students to plan and execute the delivery of the University's 800+ person Major Laague Hackathon, overseeing all logistical, financial, corporate and development relations within the organizations to host the +$40,000 events. In addition, to personally leading and developing all full stack web infrastructure related to the event, including the landing page, admin port and hacker portal. 
+              I personally lead a team of 20+ students to plan and execute the delivery of the University's 800+ person Major Laague Hackathon, overseeing all logistical, financial, corporate and development relations within the organizations to host the $30,000+ event. In addition, I was the lead in developing all full stack web infrastructure related to the event, including the landing page, admin port and hacker portal, that was used by more than 2000+ peoeple for the event.
             </div>
             <div className='text-norm mt-2'>
               <span className='font-bold'>Skills:</span> React, Tailwind, Firebase, Digital Ocean, Google Drive, Leadership & Product/Program Mangement  
@@ -75,7 +75,7 @@ const Experience = () => {
             </div>
           </div>
           <div className='lg:w-[40%] w-[80%]'>
-            <div className='p-4 flex item-center justify-center'>
+            <div className='flex item-center justify-center'>
               <img src={RuHacks} className='w-[60%] bg-primary-600 rounded-2xl p-6'/>
             </div>
           </div>

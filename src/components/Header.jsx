@@ -13,7 +13,7 @@ const ItemTop = ({ title, icon, id, index }) => {
     className={`cursor-pointer text-subHeader font-bold text-white ${index === NavLinks.length - 1 ? 'mr-0' : 'mr-12'}`}
     >
       <a href={`#${id}`} className='flex justify-center items-center'>
-        <img src={icon} className="mx-2 w-[24px] h-[24px]"/>
+        <img src={icon} className="mx-2 w-[20px] h-[20px]"/>
         {title}
       </a>
     </li>
@@ -27,8 +27,8 @@ const ItemSide = ({ title, icon, id }) => {
       className={`w-[90%] p-4 my-2 bg-primary-500 hover:bg-primary-400 transition-colors rounded-[20px] cursor-pointer`}
     >
       <a href={`#${id}`} className='flex justify-center items-center'>
-        <img src={icon} className="mr-3 w-[24px] h-[24px]"/>
-        <span class="text-subHeader text-white font-bold">{title}</span>
+        <img src={icon} className="mr-3 w-[20px] h-[20px]"/>
+        <span class="text-subHeader text-white">{title}</span>
       </a>
     </li>
   )

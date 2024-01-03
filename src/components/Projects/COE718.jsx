@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { MediaCenterLCD } from "../Variables.jsx"
 import Close from "../../assets/Close.png"
 import Joystick from "../../assets/MediaCenter/Joystick.png"
+import ModeSeletionFlowChart from "../../assets/MediaCenter/ModeSelectionFlowChart.png"
+import SnakeGame from "../../assets/MediaCenter/SnakeGame.mov"
+import AudioPlaying from "../../assets/MediaCenter/AudioPlaying.mov"
+import ImageChanging from "../../assets/MediaCenter/ImageChanging.mov"
 
 const Popup = ({isOpen, onClose}) => {
 	return (
@@ -20,7 +24,7 @@ const Popup = ({isOpen, onClose}) => {
 
 				<div className="w-full h-[90%] overflow-auto">
 
-					<div className='flex flex-col gap-4 w-[90%] lg:mx-16 mx-6 lg:my-8 my-4'>
+					<div className='flex flex-col gap-4 w-[85%] lg:mx-16 mx-6 lg:my-8 my-4'>
 						<div className="text-title font-extrabold mt-3 ss:p-0 pt-5">ARM Cortex-M4 Media Center</div>
 						<div className='text-norm text-gradient-yellow'>As an academic project for COE718 - Embedded Systems my Code is avalible only upon Request</div>
 
@@ -95,9 +99,64 @@ const Popup = ({isOpen, onClose}) => {
 							))}
 						</div>
 
-						<div>
-							Updates in Progress...
+						<div className="text-header font-bold">
+							Main Menu
 						</div>
+						<div>
+								The main menu lets the user navigate to different functionalities with the media center. As the joystick is moved up and down by the user the variable “menu_y” changes between 1-5 using a circular buffer. Once the joystick is pressed down, the global variable “currentMode” will update to the match the required state. 
+							</div>
+						<div>
+							<img src={ModeSeletionFlowChart} className="lg:w-[60%] w-full"/>
+						</div>
+
+						<div className="text-header font-bold">
+							Game Center
+						</div>
+						<div className="flex lg:flex-row flex-col gap-2">
+							<video src={SnakeGame} type="video/quicktime" controls/>
+							<div className="flex flex-col gap-2">
+								<div>
+									For the game center I had chosen to create a game of snake, which allows the player’s snake to travel throughout a 16x12 map and it is up to the user to direct the snake in such a way that the snake does not travel into its own tail or into a wall or else the game would end. 
+								</div>
+								<div>
+									Once the user selects the “Snake Game” from the main menu they will be prompted with a difficulty selection screen which was designed using a reuseable function that was main for the main menu. The only difference being that instead of “currentMode” updating when the user selects an option, “snakeSpeed” is updated and is set using a function called “setSnakeSpeed()”. Afterwards, the game will commence.
+								</div>
+								<div>
+									The default LCD was a 320x240 display but using a custom made “draw()” and “erase()” function I made simulates the effect of “GLCD_PutPixal(x, y)” but at my own dimension specification, to make the display act as a 16x12 display instead.
+								</div>
+								<div>
+									The snake’s movement was implemented using a circular counter system, where the media center is in snake mode. The main polling project will continue to obtain inputs from the user but each time this while loop occurs a counter is incremented and so once “snakeSpeed” is reached the snake will move one block and the counter will be set back to 0. 
+								</div>
+								<div>
+									The snake was defined using a defined struct array of “GamePiece”, where using the principles of a queue, where the snake updates each piece’s position in the queue to the one in front of it as the head piece updates to the next user’s last indicated direction.
+								</div>
+								<div>
+									Depending on if the location of the head piece the snake will either grow, only update the position of the snake or the game will end.
+								</div>
+							</div>
+						</div>
+
+						<div className="text-header font-bold">
+							Audio Center
+						</div>
+						<div>
+							Once the interrupt is called for the audio functionality, the computer will prompt the player to connect to the speakers of the LPC17xx. Afterwards, the board’s speaker will be able to play audio produced by the computer.  
+						</div>
+						<div>
+							In order the exit the interrupt call, a button functionality within the interrupt called was added so that, joystick inputs could still once again be handled while within the hardware process. 
+						</div>
+						<video src={AudioPlaying} type="video/quicktime" className="lg:w-[60%] w-full" controls/>
+
+						<div className="text-header font-bold">
+						 Image Gallery
+						</div>
+						<div>
+							The methodology behind how this program functions is the same principle behind how the main menu operates. That is that there is a circular variable called ”currentImage” that is used to circle through the value range of 0 to 2 to display the various image options visible in the table below
+						</div>
+						<div>
+							Each time the image is updated as well, there is a smoke image that is played onto the screen for a brief second to emulate the evolution of the Pokemon to its next evolution.
+						</div>
+						<video src={ImageChanging} type="video/quicktime" className="lg:w-[60%] w-full" controls/>
 
 					</div>
       	</div>

@@ -15,6 +15,7 @@ import Linux from "../assets/Skills/Linux.png"
 import Bash from "../assets/Skills/Bash.png"
 import Aws from "../assets/Skills/Aws.png"
 import Firebase from "../assets/Skills/Firebase.png"
+import Postman from "../assets/Skills/Postman.png"
 import Pandas from "../assets/Skills/Pandas.png"
 import Numpy from "../assets/Skills/Numpy.png"
 import Sklearn from "../assets/Skills/SkLearn.png"
@@ -116,6 +117,10 @@ export const SkillsArray = [
 				{
 					Image: Firebase,
 					Title: "Firebase"
+				},
+				{
+					Image: Postman,
+					Title: "Postman"
 				}
 			]
 		},
@@ -222,7 +227,7 @@ export const ProjectArray = [
 	{
 		Title: "Media Center Project",
 		Lang: "C",
-		Tech: "Arm Keil Embedded Development",
+		Tech: "Arm Embedded Development",
 		Link: "https://github.com/jasonk324/COE718-Media-Center",
 		Type: 3,
 		Image: MediaCenter

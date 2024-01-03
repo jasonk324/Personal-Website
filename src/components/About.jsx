@@ -28,20 +28,21 @@ const About = () => {
         <div className="lg:w-[40%] text-title font-bold flex flex-col lg:items-start items-center justify-center z-10">
           <div>Hello 😁</div>
           <div>My name is Jason Khuu</div>
-          <div className="my-2">
+          <div>
             and I am a 
-            <ReactRotatingText
+          </div>
+          <ReactRotatingText
               items={[
-                " Software Engineer",
-                " Electrial Engineer",
-                " Program Manager"
+                "Software Engineer",
+                "Electrial Engineer",
+                "Program Manager"
               ]}
               color="#eeea00"
+              className="mb-2"
             />
-          </div>
 
           <div className='text-subHeader font-normal lg:text-start text-center'>
-           I am going to be graduating in May 2024 with a degree with Electrical Engineering from Toronto Metropolitan University, am am currently looking for new graduate roles. I have a proven track record in Software, Hardware and Management 👨‍💻 and am passionate in exploring all new opprotunities in technology. 
+            Currently in search of 2024 new graduate roles! In May 2024, I'll be graduating from Toronto Metropolitan University with a degree in Electrical Engineering. I have a proven track record in Software, Hardware and Management 👨‍💻 and am passionate in exploring all new opprotunities in technology. 
           </div>
 
           <div className='lg:text-start text-center'>

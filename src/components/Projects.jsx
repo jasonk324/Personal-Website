@@ -5,8 +5,6 @@ import COE768 from './Projects/COE768'
 import Default from './Projects/Default'
 
 const Project = ({Title, Lang, Tech, Link, Type, Img}) => {
-  const [popup, setPopup] = useState(true)
-
   if (Type === 1) {
     return ( 
       <Default Title={Title} Lang={Lang} Tech={Tech} Link={Link} Img={Img}/>

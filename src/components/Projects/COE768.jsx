@@ -20,8 +20,9 @@ const Popup = ({isOpen, onClose}) => {
 
 				<div className="w-full h-[90%] overflow-auto">
 
-					<div className='flex flex-col gap-4 w-[90%] lg:mx-16 mx-6 lg:my-8 my-4'>
-						<div className="text-title font-extrabold mt-3 ss:p-0 pt-5">Peer to Peer Computer Network Application</div>
+					<div className='flex flex-col gap-4 w-[80%] lg:mx-16 mx-6 lg:my-8 my-4'>
+						<div className="text-title font-extrabold mt-3 ss:p-0 pt-5">
+							Peer to Peer Computer Network Application</div>
 						<div className='text-norm text-gradient-yellow'>As an academic project for COE768 - Computer Network my Code is avalible only upon Request</div>
 
 
