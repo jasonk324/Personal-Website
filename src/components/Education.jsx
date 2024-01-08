@@ -24,7 +24,7 @@ const Education = () => {
             <span className='font-bold'>Undergraduate Research Opportunity Award (2021):</span> Granted $10,500 as a result of academic achievements by the vice-president, research & innovation office to conduct research under a faculty supervior.  
           </div>
           <div className='text-norm lg:text-start text-center mt-2'>
-            <span className='font-bold'>Relavent courses:</span> Discrete Math, Probability, Computer Networks, Embedded Systems, Data Structures and Algorithms, Object Oriented Programming, Digital Signal Processing, Electric Networks, Eletronic Circuits, Energy Conversion, Microwave Engineering 
+            <span className='font-bold'>Relevant courses:</span> Computer Networks, Embedded Systems, Data Structures and Algorithms, Object Oriented Programming, Digital Signal Processing, Communication Systems, Machine Learning, Discrete Math, Probability, Electric Networks, Eletronic Circuits, Energy Conversion, Microwave Engineering 
           </div>
         </div>
 

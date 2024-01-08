@@ -15,7 +15,7 @@ const Experience = () => {
         <div className='w-full flex lg:flex-row flex-col items-center justify-center'>
           <div className='lg:w-[65%] p-8 flex flex-col'>
           <div className='text-header font-bold'>Advanced Micro Devices (AMD)</div>
-            <div className='text-title font-bold'>Software Developer / Program Management Intern 🖥️</div>
+            <div className='text-title font-bold'>Software Developer & Program Management Intern 🖥️</div>
             <div className='text-subHeader'>May 2022 - August 2023 (16 Months)</div>
             <div className='text-subHeader mt-2'>
               During my time as apart of the Software Engineering Program Management Department within the User Expereince Group, I had pioneered and lead the develomenet of several projects to generate better data driven decision making within the company, while also assisted with program managing the delivery of <span className='underline text-blue-200'><a href='https://gpuopen.com/introducing-adlx/'>AMD's public C/C++ SDK ADLX</a></span>. During this time, I had the opportunity to create various full stack data dashboards and company websites, that I personally presented to Vice Presidents and 100+ Managers & Engineers at the company.  
