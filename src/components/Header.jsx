@@ -79,7 +79,7 @@ const Header = () => {
                 <img src={Linkedin} className='w-[24px] h-[24px] cursor-pointer'/>
               </a>
             </div>
-            <div className='font-bold text-primary-200'>Jason Khuu ©2023</div>
+            <div className='font-bold text-primary-200'>Jason Khuu ©2024</div>
           </div>
         </div>
       </div>

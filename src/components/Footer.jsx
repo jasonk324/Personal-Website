@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className="text-norm text-primary-200">
-          Jason Khuu ©2023
+          Jason Khuu ©2024
         </div>
 
       </div>
